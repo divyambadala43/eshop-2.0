@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route to="/" element={<Home />} />
         <Route to="/products" element={<Product />} />
@@ -17,6 +18,7 @@ function App() {
         <Route to="/contact" element={<Contact />} />
         {/* <Redirect /> */}
       </Routes>
+      <Footer />
     </>
   );
 }
