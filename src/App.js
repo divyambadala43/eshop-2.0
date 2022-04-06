@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+      <Home />
       <Routes>
         <Route to="/" element={<Home />} />
         <Route to="/products" element={<Product />} />
