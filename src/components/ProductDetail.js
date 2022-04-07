@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { DATA } from "../data/data";
+import { addItem, delItem } from "../redux/actions/index";
 
 const ProductDetail = () => {
   const [cartButton, setCartButton] = useState("Add to Cart");
@@ -10,10 +12,14 @@ const ProductDetail = () => {
   const product = productDeatil[0];
   console.log(product);
 
+  const dispatch = useDispatch();
+
   const handleCart = (product) => {
     if (cartButton === "Add to Cart") {
+      dispatch(addItem(product));
       setCartButton("Remove from Cart");
     } else {
+      dispatch(delItem(product));
       setCartButton("Add to Cart");
     }
   };
