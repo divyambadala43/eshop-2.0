@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./Product";
 
 const Home = () => {
   return (
@@ -89,6 +90,7 @@ const Home = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <Product />
     </div>
   );
 };
