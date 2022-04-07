@@ -32,3 +32,11 @@ code {
 /* .card-img-top{
   max-height:400px;
 } */
+
+.product img {
+  transition: all 0.5s ease;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+}
