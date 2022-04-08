@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const [cartButton, setCartButton] = useState("Add to Cart");
 
   const productId = useParams();
-  const productDeatil = DATA.filter((x) => x.id == productId.id);
+  const productDeatil = DATA.filter((x) => x.id === productId.id);
   const product = productDeatil[0];
   console.log(product);
 
