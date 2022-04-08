@@ -6,6 +6,7 @@ import About from "./components/About";
 import Product from "./components/Product";
 import Contact from "./components/Contact";
 import ProductDetail from "./components/ProductDetail";
+import Cart from "./components/Cart";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/products" element={<Product />} />
         <Route exact path="/products/:id" element={<ProductDetail />} />
+        <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
         {/* <Redirect /> */}
